@@ -10,10 +10,9 @@ int main()
     printf("Enter a num for sum: ");
     scanf("%d",&num);
     n=num;
-    while (num>0)
+    while (num!=0)
     {
-        r = num%10;
-        sum=sum+r;
+        sum+=num%10;
         num = num/10;
     }
     printf("The sum of individual digits of %d is %d",n,sum);
