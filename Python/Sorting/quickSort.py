@@ -9,4 +9,4 @@ def quick_sort(array):
 
 
 arr = [7, 2, 4, 0, 1, 5, 8, 3, 2, 0]
-print(quick_sort(arr)) # [0, 0, 1, 2, 2, 3, 4, 5, 7, 8]
+print(quick_sort(arr))
