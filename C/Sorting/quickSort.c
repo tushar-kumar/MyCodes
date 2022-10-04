@@ -24,9 +24,7 @@ void stampa_array(int a[], int n) {
 
 void quicksort(int a[MAX],int primo,int ultimo){
    int i, j, pivot, temp;
-/*pivot -- inizialmente il pivot è il primo elemento
-primo e ultimo sono le due variabili che servono per scorrere l'array
-*/
+
    if(primo<ultimo){
       pivot=primo;
       i=primo;
