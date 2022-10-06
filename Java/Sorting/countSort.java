@@ -1,17 +1,7 @@
 import java.util.Arrays;
 
 public class CountingSort {
-	/*
-	 * This code performs a Counting sort of
-	 * a list of positive integer values.
-	 * 
-	 * Let n be size of the list to be sorted and
-	 * m be the maximum value in the list
-	 * 
-	 * Time complexity: O(n)
-	 * Space complexity: O(n+m)
-	 * 
-	 */
+	
 	public static void main(String[] args) {
 		int[] arr = { 2, 4, 3, 1 };
 
@@ -20,11 +10,7 @@ public class CountingSort {
 		System.out.println(Arrays.toString(sortedArr)); // [1, 2, 3, 4]
 	}
 	private static int[] countingSort(int[] arr) {
-		/*
-		 * The counting sort method counts the number
-		 * of occurrences of every element in arr.
-		 * Then uses that information to sort these elements.
-		 */
+	
 		int max = findMax(arr);
 		if (max == Integer.MIN_VALUE) {
 			return new int[] {};
