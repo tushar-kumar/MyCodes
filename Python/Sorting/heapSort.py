@@ -39,7 +39,7 @@ def bubble_down(current_idx, last_idx, heap):
 
 list = [1, 10, 4, 3, 2]
 heap_sort(list)
-# Descending order
+
 print(list)  # [10, 4, 3, 2, 1]
 # Ascending order
 list.reverse()

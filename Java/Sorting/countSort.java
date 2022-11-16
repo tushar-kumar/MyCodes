@@ -40,6 +40,5 @@ public class CountingSort {
 			}
 		}
 		return max;
-		// or return Collections.max(Arrays.asList(arr));
 	}
 }
