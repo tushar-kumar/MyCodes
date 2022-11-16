@@ -17,12 +17,11 @@ class Radix {
     
     static void countSort(int arr[], int n, int exp)
     {
-        int output[] = new int[n]; // output array
+        int output[] = new int[n];
         int i;
         int count[] = new int[10];
         Arrays.fill(count, 0);
  
-        // Store count of occurrences in count[]
         for (i = 0; i < n; i++)
             count[(arr[i] / exp) % 10]++;
  
