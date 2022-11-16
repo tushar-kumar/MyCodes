@@ -70,7 +70,7 @@ int main()
 {
 
    int n = sizeof(s)/sizeof(s[0]);
-    // sorting given arrays by finishing time
+    
     bubbleSort(n);
 
 
