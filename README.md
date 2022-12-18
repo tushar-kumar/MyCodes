@@ -5,7 +5,7 @@ Most of the codes that I an writing....
 Leetcode </br>
 GFG </br>
 
-### Langs Used
+### Langs Used:
 C </br>
 JAVA </br>
 PYTHON </br>
