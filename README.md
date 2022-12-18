@@ -1,11 +1,11 @@
 # MyCodes
 Most of the codes that I an writing....
 
-## Platforns:
+### Platforns:
 Leetcode
 GFG
 
-## Langs Used
+### Langs Used
 C
 JAVA
 PYTHON
