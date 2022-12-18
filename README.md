@@ -2,12 +2,12 @@
 Most of the codes that I an writing....
 
 ### Platforns:
-Leetcode
-GFG
+Leetcode </br>
+GFG </br>
 
 ### Langs Used
-C
-JAVA
-PYTHON
-R
-GO
+C </br>
+JAVA </br>
+PYTHON </br>
+R </br>
+GO 
