@@ -1,6 +1,6 @@
 import PyPDF2
 
-pdfFileObj = open('R1.pdf', 'rb')
+pdfFileObj = open('sample.pdf', 'rb')
 
 pdfReader = PyPDF2.PdfReader(pdfFileObj)
 

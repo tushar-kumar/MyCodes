@@ -1,22 +1,15 @@
-import io
 from PIL import Image
 import pytesseract
-from wand.image import Image as wi
+pytesseract.pytesseract.tesseract_cmd = r'C:\Users\KIYO\AppData\Local\Tesseract-OCR\tesseract.exe'
 
-pdfFile = wi(filename = "sample.pdf", resolution = 300)
-image = pdfFile.convert('jpeg')
+# file = Image.open("samplepdfimage-0.jpg")
+# str = pytesseract.image_to_string(file, lang='eng')
 
-imageBlobs = []
-
-for img in image.sequence:
-	imgPage = wi(image = img)
-	imageBlobs.append(imgPage.make_blob('jpeg'))
-
-extract = []
-
-for imgBlob in imageBlobs:
-	image = Image.open(io.BytesIO(imgBlob))
-	text = pytesseract.image_to_string(image, lang = 'eng')
-	extract.append(text)
-
-print(extract)
+import fitz
+doc = fitz.open('sample.pdf')
+for page in doc:
+    pix = page.get_pixmap(matrix=fitz.Identity, dpi=100,
+                          colorspace=fitz.csGRAY, clip=None, alpha=True, annots=True)
+    str = pytesseract.image_to_string(pix, lang='eng')
+    print(str)
+    # pix.save("samplepdfimage-%i.jpg" % page.number)
