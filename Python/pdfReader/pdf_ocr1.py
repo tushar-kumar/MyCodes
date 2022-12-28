@@ -3,7 +3,7 @@ from PIL import Image
 import pytesseract
 from wand.image import Image as wi
 
-pdfFile = wi(filename = ""/home/user/sample.pdf"", resolution = 300)
+pdfFile = wi(filename = "sample.pdf", resolution = 300)
 image = pdfFile.convert('jpeg')
 
 imageBlobs = []
