@@ -1,5 +1,5 @@
 import tabula
-df = tabula.read_pdf('R1.pdf',pages = "all")
+df = tabula.read_pdf('R2.pdf',pages = "all")
+print(len(df),"tables found")
+print(df[0])
 print(df[1])
-print(type(df))
-print(type(df[0]))
