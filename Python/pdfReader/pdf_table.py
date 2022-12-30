@@ -1,5 +1,6 @@
 import tabula
 df = tabula.read_pdf('R2.pdf',pages = "all")
 print(len(df),"tables found")
-print(df[0])
-print(df[1])
+for i in range(0,len(df)):
+    print(df[i])
+    print("\n")
