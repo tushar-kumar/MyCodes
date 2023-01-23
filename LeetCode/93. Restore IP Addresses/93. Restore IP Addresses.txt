@@ -1,9 +1,7 @@
 class Solution:
     def restoreIpAddresses(self, s: str) -> List[str]:
         ans = []
-        # if len(s) < 4 or len(s)>12:
-        #     return ans
-
+        
         def dfs(start: int, path: List[int]) -> None:
             if len(path) == 4 and start == len(s):
                 ans.append(path[0] + '.' + path[1] + '.' + path[2] + '.' + path[3])
