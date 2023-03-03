@@ -3,8 +3,6 @@ class Solution:
         if not height:
             return 0
         ans = 0
-        
-       
         l = 0
         r = len(height) - 1
         maxL = height[l]
