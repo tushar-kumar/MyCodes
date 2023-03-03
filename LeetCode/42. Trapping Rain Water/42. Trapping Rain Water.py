@@ -3,9 +3,7 @@ class Solution:
         if not height:
             return 0
         ans = 0
-        # p = 0
-        # cnt =0
-
+        
         # for h in height:
         #     if h > 0 and cnt == 0:
         #         p = h
