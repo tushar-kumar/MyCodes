@@ -1,0 +1,18 @@
+if not matrix:
+      return []
+
+    m, n = len(matrix), len(matrix[0])
+    ans, r1, c1, r2, c2 = [], 0, 0, m - 1, n - 1
+
+    while len(ans) < m * n:
+      for j in range(c1, c2 + 1):
+        ans.append(matrix[r1][j])
+      for i in range(r1 + 1, r2):
+        ans.append(matrix[i][c2])
+      for j in range(c2, c1 - 1, -1):
+        ans.append(matrix[r2][j])
+      for i in range(r2 - 1, r1, -1):
+        ans.append(matrix[i][c1])
+      r1, c1, r2, c2 = r1 + 1, c1 + 1, r2 - 1, c2 - 1
+
+    return ans
