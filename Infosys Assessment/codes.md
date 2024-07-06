@@ -99,3 +99,36 @@ print(min_operations_to_make_equal("abcee", "efgee"))  # Output: 6
 print(min_operations_to_make_equal("ijhk", "oujpopp"))  # Output: 9
 
 ```
+### Time Complexity : O(m*n)
+
+## Using Recursion 
+```
+
+def lcs(i, j, count,X,Y):
+
+    if (i == 0 or j == 0):
+        return count
+
+    if (X[i - 1] == Y[j - 1]):
+        count = lcs(i - 1, j - 1, count + 1,X,Y)
+
+    count = max(count, max(lcs(i, j - 1, 0, X, Y),
+                           lcs(i - 1, j, 0, X, Y)))
+
+    return count
+    
+def min_operations_to_make_equal(X, Y):
+    m = len(X)
+    n = len(Y)
+    
+    result = lcs(m,n,0,X,Y)
+
+    
+    return (m-result)+(n-result)
+
+# Test cases
+print(min_operations_to_make_equal("abaca", "ababa"))  # Output: 4
+print(min_operations_to_make_equal("abcee", "efgee"))  # Output: 6
+print(min_operations_to_make_equal("ijhk", "oujpopp"))  # Output: 9
+
+```
